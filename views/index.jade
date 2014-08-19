@@ -5,6 +5,7 @@ block content
   p Welcome to #{title}
   a(href = "/users") Go to users
   script.
+    document.domain = 'runnable3.net';
     setTimeout(function() {
       document.getElementsByTagName('h1')[0].textContent = 'Updated!';
     }, 3000);
