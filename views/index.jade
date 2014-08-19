@@ -4,3 +4,7 @@ block content
   h1= title
   p Welcome to #{title}
   a(href = "/users") Go to users
+  script.
+    setTimeout(function() {
+      document.getElementsByTagName('h1')[0].textContent = 'Updated!';
+    }, 3000);
